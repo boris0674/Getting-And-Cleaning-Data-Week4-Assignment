@@ -1,4 +1,4 @@
-﻿
+
 
  **A description of the tidydata.txt file**
  
@@ -101,7 +101,7 @@
 [79]fBodyBodyGyroJerkMag.mean..
 [80]fBodyBodyGyroJerkMag.std.. 
 [81]fBodyBodyGyroJerkMag.meanFreq..
-> 
+
 
 **A note on the class of the variables**
 
