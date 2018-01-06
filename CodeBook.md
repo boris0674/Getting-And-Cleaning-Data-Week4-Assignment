@@ -2,6 +2,7 @@
 
  **A description of the tidydata.txt file**
  
+ 
  -  The file is a table featuring 180 rows and 81 columns
  
  - Each row is made of a series of means for each individual and each of the    activities
@@ -17,6 +18,7 @@
 4 SITTING
 
 5 STANDING
+
 6 LAYING
 
 
@@ -24,6 +26,7 @@
 
 
 **List of the chosen variables**
+
 
 [1] activity
 
@@ -57,11 +60,11 @@
 
 [16]tBodyAccJerk.mean...Y
 
-[17] tBodyAccJerk.mean...Z
+[17]tBodyAccJerk.mean...Z
 
 [18]tBodyAccJerk.std...X
 
-[19] tBodyAccJerk.std...Y
+[19]tBodyAccJerk.std...Y
 
 [20]tBodyAccJerk.std...Z
 
@@ -189,6 +192,8 @@
 
 
 **A note on the class of the variables**
+
+
 
 subject is integers, activity factors and the rest is numeric
 
