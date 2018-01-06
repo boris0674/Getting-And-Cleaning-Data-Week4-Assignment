@@ -191,6 +191,10 @@
 [81]fBodyBodyGyroJerkMag.meanFreq..
 
 
+
+
+
+
 **A note on the class of the variables**
 
 
