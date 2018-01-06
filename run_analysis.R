@@ -75,7 +75,7 @@ dim(testdataframe)
 
 features <- read.table(file="features.txt")
 
-## it us uploaded as a no header dataframe with 2 columns ad 563 rows:
+## it us uploaded as a no header dataframe with 2 columns ad 561 rows:
 dim(features)
 
 head(features)
@@ -123,7 +123,7 @@ testdataframe[1:5,1:5]
 
 
 ## Now I use the cbind function to create a single dataframe 
-, stacking the training one on top
+## stacking the training data one on top
 
 complete <- rbind(trainingdataframe, testdataframe)
 
@@ -153,7 +153,7 @@ complete$activity[complete$activity==6] <- "laying"
 
 
 ## Now I use the grpl fuction to subset our datbase
-## keeping only the mean and standrad deviation columns
+## keeping only the mean and standard deviation columns
 ## and of course the first 2 variables with people id and activity
 
 MeansandSTD <- complete[,grepl("mean|std|subject|activity", names(complete))]
@@ -166,10 +166,11 @@ names(MeansandSTD)
 
 dim(MeansandSTD)
 
-## Now I get the requested average using some funcitons in the dplyr package
+## Now I get the requested average using some functions in the dplyr package
 ## group_by to allow us to group our datbase into 180 groups
-## each for 1 of the 6 actities and 1 of 30 people
+## each for 1 of the 6 activities and 1 of 30 people
 ## then sumarise_all to get the average for each of them
+## I work these functions with the pipe operator
 
 final_means_std <- MeansandSTD %>% group_by(activity, subject) %>%
 summarise_all(funs(mean))
